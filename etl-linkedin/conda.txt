@@ -1,0 +1,23 @@
+conda create --name nombre_del_entorno python=3.x
+conda create --name nombre_del_entorno
+conda create --name nombre_del_entorno
+conda install nombre_del_paquete
+pip install nombre_del_paquete
+conda deactivate
+conda env list
+conda env remove --name nombre_del_entorno
+conda env export > environment.yml
+
+conda create --name etl python=3.8
+conda create --name linked python=3.8
+
+conda activate etl
+pip install pandas sqlalchemy psycopg2-binary apache-airflow
+
+pip freeze > requirements.txt
+
+pip install -r requirements.txt
+
+
+NOT USING CONDA
+pipenv --rm
