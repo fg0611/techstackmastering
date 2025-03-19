@@ -1,0 +1,31 @@
+-- select * from empresas;
+-- select * from vacantes;
+-- select * from habilidades;
+-- select * from postulantes;
+-- select * from postulantes_habilidades;
+-- select * from postulaciones;
+
+-- select p.id_postulante, p.nombre_postulante, v.titulo_vacante
+-- from postulantes p
+-- join postulaciones ps
+-- on p.id_postulante = ps.id_postulante
+-- join vacantes v
+-- on v.id_vacante = ps.id_vacante
+
+-- select p.nombre_postulante, h.nombre_habilidad 
+-- from postulantes p
+-- join postulantes_habilidades ph
+-- on p.id_postulante = ph.id_postulante
+-- join habilidades h
+-- on ph.id_habilidad = h.id_habilidad
+-- where p.id_postulante = 3;
+
+-- with postulantes_ph as
+-- (select p.id_postulante, p.nombre_postulante, ph.id_habilidad from postulantes p
+-- join postulantes_habilidades ph ON p.id_postulante = ph.id_postulante
+-- ),
+-- pos_hab as
+-- (select p.nombre_postulante, h.nombre_habilidad from postulantes_ph p
+-- join habilidades h ON p.id_habilidad = h.id_habilidad
+-- )
+-- select * from pos_hab where nombre_postulante = 'Ana';

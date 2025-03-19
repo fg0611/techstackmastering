@@ -1,0 +1,24 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "vscode-postgres",
+            "database": "practice",
+            "username": "postgres",
+            "password": "123123"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "training",
+            "database": "training",
+            "username": "postgres",
+            "password": "123123"
+        }
+    ]
+}

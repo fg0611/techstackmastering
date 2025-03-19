@@ -1,0 +1,14 @@
+-- select r.id_vacante, r.id_habilidad, h.nombre_habilidad 
+-- from requerimientos r 
+-- join habilidades h
+-- on r.id_habilidad = h.id_habilidad;
+-- select * from habilidades;
+-- select * from vacantes
+-- insert into vacantes (id_empresa, descripcion_vacante, fecha_publicacion) 
+-- values (2, 'Desarrollador backend python', '2024-01-01');
+-- update vacantes set titulo_vacante = 'Backend Python Dev' 
+-- where id_vacante = 6;
+-- update vacantes set descripcion_vacante = 'Backend Flask Python' 
+-- where id_vacante = 6;
+-- insert into habilidades (nombre_habilidad) values ('Flask');
+-- insert into requerimientos (id_vacante, id_habilidad) values (6, 6);
