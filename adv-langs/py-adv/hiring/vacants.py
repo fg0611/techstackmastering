@@ -25,13 +25,13 @@ data = [
         "title": "Web Developer",
         "company": 3,
         "description": "Creates and maintains websites.",
-        "date_published": "2023-04-01"
+        "date_published": "2024-02-01"
     },
     {
         "id": 5,
         "title": "UX Designer",
         "company": 1,
         "description": "Designs user interfaces and experiences.",
-        "date_published": "2023-05-05"
+        "date_published": "2025-01-05"
     }
 ]
