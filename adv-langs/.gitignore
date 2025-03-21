@@ -1,0 +1,36 @@
+# Archivos de bytecode de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+*/site-packages/
+
+# Archivos de registro y temporales
+*.log
+*.bak
+*.swp
+*.swo
+*.cache
+
+# Archivos de configuración locales
+.env
+.env.*
+instance/
+
+# Archivos generados por herramientas
+build/
+dist/
+__pypackages__/
+*.egg-info
+
+# Archivos de IDEs (opcional, ajusta según tu IDE)
+.idea/
+*.vscode/
+*.project
+*.tmproj

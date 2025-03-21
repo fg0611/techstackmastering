@@ -17,19 +17,16 @@
 # print(data)
 
 data = [
-    {"id": 1, "candidate": 1, "skill": 13},
-    {"id": 2, "candidate": 1, "skill": 7},
-    {"id": 3, "candidate": 2, "skill": 12},
-    {"id": 4, "candidate": 2, "skill": 9},
-    {"id": 5, "candidate": 2, "skill": 3},
-    {"id": 6, "candidate": 2, "skill": 6},
-    {"id": 7, "candidate": 3, "skill": 4},
-    {"id": 8, "candidate": 3, "skill": 3},
-    {"id": 9, "candidate": 3, "skill": 11},
-    {"id": 10, "candidate": 4, "skill": 14},
-    {"id": 11, "candidate": 4, "skill": 9},
-    {"id": 12, "candidate": 4, "skill": 6},
-    {"id": 13, "candidate": 4, "skill": 13},
-    {"id": 14, "candidate": 5, "skill": 2},
-    {"id": 15, "candidate": 5, "skill": 12},
+    [
+        {"id": 1, "candidate": 1, "skill": 3},
+        {"id": 2, "candidate": 1, "skill": 5},
+        {"id": 3, "candidate": 2, "skill": 5},
+        {"id": 4, "candidate": 3, "skill": 1},
+        {"id": 5, "candidate": 4, "skill": 1},
+        {"id": 6, "candidate": 4, "skill": 5},
+        {"id": 7, "candidate": 4, "skill": 3},
+        {"id": 8, "candidate": 4, "skill": 2},
+        {"id": 9, "candidate": 5, "skill": 5},
+        {"id": 10, "candidate": 5, "skill": 1},
+    ]
 ]

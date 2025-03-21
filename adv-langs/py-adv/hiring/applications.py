@@ -15,6 +15,7 @@
 
 # print(data)
 
+# LIST OF APPLICATIONS USING RANDOM DATA PYTHON + RANDOM
 data = [
     {"id": 1, "candidate": 1, "vacant": 2},
     {"id": 2, "candidate": 1, "vacant": 5},
