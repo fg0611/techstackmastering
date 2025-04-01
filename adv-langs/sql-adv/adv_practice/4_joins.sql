@@ -45,3 +45,6 @@
 -- h.id_habilidad = ph.id_habilidad
 -- group by 1 
 -- order by n_skills desc;
+
+select v.titulo_vacante, e.nombre_empresa 
+from vacantes v join empresas e on v.id_empresa = e.id_empresa 

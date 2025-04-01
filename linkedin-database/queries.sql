@@ -31,7 +31,3 @@
 -- INSERT INTO skills (nombre) VALUES ('Python'), ('JavaScript'), ('SQL');
 
 -- select * from roles
-
-
-
-
