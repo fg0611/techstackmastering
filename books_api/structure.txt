@@ -1,0 +1,19 @@
+mi_api_libros/
+├── app.py             # Archivo principal de la aplicación Flask
+├── config.py          # Configuración de la aplicación (Supabase, etc.)
+├── models/            # Definición de modelos de datos (si usas un ORM)
+│   ├── libro.py
+│   └── usuario.py
+├── schemas/           # Definición de esquemas de serialización/deserialización (ej., Marshmallow)
+│   ├── libro_schema.py
+│   └── usuario_schema.py
+├── resources/         # Lógica de los endpoints de la API (controladores)
+│   ├── libros_resource.py      # Rutas relacionadas con la información de libros (Open Library y DB)
+│   └── usuarios_resource.py    # Rutas relacionadas con la gestión de usuarios (Supabase)
+├── services/          # Lógica de negocio y llamadas a servicios externos (Open Library)
+│   └── open_library_service.py
+├── extensions.py      # Inicialización de extensiones de Flask (Supabase client)
+├── tests/             # Pruebas unitarias e de integración
+│   ├── test_libros.py
+│   └── test_usuarios.py
+└── .env               # Variables de entorno (URL de Supabase, clave anónima)
