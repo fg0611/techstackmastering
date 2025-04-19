@@ -1,8 +1,11 @@
-class Heroe:
+class Personaje:
     def __init__(self, nombre, ataque, vida):
         self.nombre = nombre
         self.ataque = ataque
         self.vida = vida
+
+    def tipo_pj (self):
+        return 'personaje'
 
     def vive(self):
         return self.vida > 0
@@ -34,11 +37,14 @@ class Heroe:
         print(f"{self.nombre} tiene {self.vida} de vida y {self.ataque} de ataque")
 
 
-class Guerrero(Heroe):
+class Guerrero(Personaje):
     def __init__(self, nombre, ataque, vida, arma):
         super().__init__(nombre, ataque, vida)
-        # Heroe.__init__(self, nombre, ataque, vida)
+        # personaje.__init__(self, nombre, ataque, vida)
         self.arma = arma
+    
+    def tipo_pj (self):
+        return 'guerrero'
 
     def seleccionar_arma(self):
         opcion = int(
@@ -78,8 +84,7 @@ class Guerrero(Heroe):
         else:
             enemigo.morir()
 
-
-heroe_basico = Heroe("Villano", 5, 200)
+personaje_basico = Personaje("Villano", 5, 200)
 
 # enemigo.atributos()
 
@@ -94,21 +99,27 @@ fran = Guerrero("Fran", 5, 200, 5)
 # fran.atacar(enemigo)
 
 # enemigo.atributos()
-heroe_basico.atributos()
-fran.atributos()
+# personaje_basico.atributos()
+# fran.atributos()
 
-def intercambio(p1, p2):
-    print('..... intercambio .....')
-    p1.atacar(p2)
+# def intercambio(p1, p2):
+#     print('..... intercambio .....')
+#     p1.atacar(p2)
 
-intercambio(heroe_basico, fran)
+# intercambio(personaje_basico, fran)
 
-fran.atributos()
+# fran.atributos()
 
-fran.seleccionar_arma()
+# fran.seleccionar_arma()
 
-intercambio(fran, heroe_basico)
+# intercambio(fran, personaje_basico)
 
-heroe_basico.atributos()
+# personaje_basico.atributos()
 
+
+def que_personaje (pj):
+    print(f'{pj.nombre} es del tipo {pj.tipo_pj()}')
+
+que_personaje(personaje_basico)
+que_personaje(fran)
 
