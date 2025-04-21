@@ -7,4 +7,5 @@ def init_supabase(app):
     supabase_url = app.config['SUPABASE_URL']
     supabase_key = app.config['SUPABASE_KEY']
     supabase = create_client(supabase_url, supabase_key)
+    # print(supabase_key)
     return supabase

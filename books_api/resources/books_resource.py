@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify
-from ..services.open_library import search_books, search_books_by_isbn
+from services.open_library_service import search_books, search_books_by_isbn
 
-books_bp = Blueprint("books", __name__)
+books_bp = Blueprint("books", __name__, url_prefix="/api/books")
 
 @books_bp.route("/search", methods=["GET"])
 def search():
@@ -31,7 +31,7 @@ def buscar_por_autor(autor):
 # Ejemplo para buscar por título (palabras contenidas):
 @books_bp.route("/title/<word>", methods=["GET"])
 def search_by_title(word):
-    results = search_books(f"title:{word}")
+    results = search_books(f"title:{word}&limit=1")
     return jsonify(results)
 
 # Ejemplo para buscar por fecha de publicación (aproximada):

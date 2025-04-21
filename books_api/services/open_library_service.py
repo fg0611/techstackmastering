@@ -2,7 +2,6 @@ import requests
 
 OPEN_LIBRARY_BASE_URL = "https://openlibrary.org"
 
-
 def search_books(query):
     url = f"{OPEN_LIBRARY_BASE_URL}/search.json?q={query}"
     try:
