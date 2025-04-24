@@ -4,6 +4,8 @@ import urllib.parse
 from playwright.async_api import async_playwright
 from typing import List, Optional
 import database as db_functions
+import random as rd
+from navigate import generate_page, scroll_randomly
 
 def generate_google_query_url(query: str, sub_search: str) -> str:
     """Genera la url de busqueda en google"""
@@ -13,22 +15,19 @@ def generate_google_query_url(query: str, sub_search: str) -> str:
     search_url = base_url + "?" + urllib.parse.urlencode(params)
     return search_url
 
-
 async def extract_google_suggested_urls(url: str) -> List[str]:
     """Extrae listado de urls de Google"""
     """Extract job urls from Google"""
     suggested_urls = []
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=False)
-        page = await browser.new_page()
-        await page.goto(url)
+        page, browser = await generate_page(p, url)
+        time.sleep(rd.uniform(10, 12)) # wait few secs
+        await scroll_randomly(page)
 
-        time.sleep(10)
-        
         links = await page.locator("a").all()
         for l in links:
             href = await l.get_attribute("href")
-            if href and "linkedin.com/jobs/" in href:
+            if href and "linkedin.com/jobs/" in href and "translate" not in href:
                 suggested_urls.append(href)
 
         await browser.close()
