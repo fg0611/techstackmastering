@@ -4,8 +4,7 @@ import asyncpg
 from config import DB, HOST, PASS, USER
 
 # async def run():
-#     conn = await asyncpg.connect(user='postgres', password='123123',
-#                                  database='job_finder', host='127.0.0.1')
+# conn = await asyncpg.connect(user=USER, password=PASS, database=DB, host=HOST)
 #     values = await conn.fetch(
 #         'SELECT * FROM jobs WHERE id = $1',
 #         10,
