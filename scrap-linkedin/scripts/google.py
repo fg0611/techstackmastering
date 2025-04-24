@@ -24,7 +24,7 @@ def gsearch(query):
     driver = webdriver.Chrome(service=service, options=options)
 
     # query = 'web developer'
-    sub_search = 'remote english'
+    sub_search = 'remote english spanish'
     base_url = "https://www.google.com/search"
     params = {
         "q": f"site:linkedin.com/jobs {query} {sub_search}"
@@ -61,3 +61,6 @@ def gsearch(query):
     print(f'en google se encontraron {len(job_links)} urls')
     driver.quit()
     return job_links
+
+
+gsearch("python junior")
