@@ -29,6 +29,16 @@
             "username": "postgres",
             "database": "job_finder",
             "password": "123123"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "musica",
+            "database": "musica",
+            "username": "postgres",
+            "password": "123123"
         }
     ]
 }
