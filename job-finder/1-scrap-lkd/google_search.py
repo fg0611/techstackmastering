@@ -21,7 +21,7 @@ async def extract_google_suggested_urls(url: str) -> List[str]:
     suggested_urls = []
     async with async_playwright() as p:
         page, browser = await generate_page(p, url)
-        time.sleep(rd.uniform(10, 12)) # wait few secs
+        time.sleep(rd.uniform(4, 6)) # wait few secs
         await scroll_randomly(page)
 
         links = await page.locator("a").all()

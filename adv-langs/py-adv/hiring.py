@@ -1,5 +1,11 @@
 score_list = [12 , -12, 2, 2, 24, 1, 24]
-print(score_list)
+# print(score_list)
+
+# for i, n in enumerate(score_list):
+#     print(i)
+
+
+
 
 # sol 1
 # score_list.sort()

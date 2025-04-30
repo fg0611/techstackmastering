@@ -1,0 +1,102 @@
+SQL Questions:\
+\
+1) Write an SQL query to find the employees who earn more than their managers.\
+\
+Input: \
+Employee table:\
++----+-------+--------+-----------+\
+| id | name  | salary | managerId |\
++----+-------+--------+-----------+\
+| 1  | Joe   | 70000  | 3         |\
+| 2  | Henry | 80000  | 4         |\
+| 3  | Sam   | 60000  | Null      |\
+| 4  | Max   | 90000  | Null      |\
++----+-------+--------+-----------+\
+Output: \
++----------+\
+| Employee |\
++----------+\
+| Joe      |\
++----------+\
+
+Explanation: Joe is the only employee who earns more than his manager.\
+\
+\
+\
+\
+1) Write an SQL query that selects the product id, year, quantity, and price for the first year of every product sold?\
+Input: \
+Sales table:\
+
+select * from sales where 
+
++---------+------------+------+----------+-------+\
+| sale_id | product_id | year | quantity | price |\
++---------+------------+------+----------+-------+ \
+| 1       | 100        | 2008 | 10       | 5000  |\
+| 2       | 100        | 2009 | 12       | 5000  |\
+| 7       | 200        | 2011 | 15       | 9000  |\
++---------+------------+------+----------+-------+\
+Product table:\
++------------+--------------+\
+| product_id | product_name |\
++------------+--------------+\
+| 100        | Nokia        |\
+| 200        | Apple        |\
+| 300        | Samsung      |\
++------------+--------------+\
+Output: \
++------------+------------+----------+-------+\
+| product_id | first_year | quantity | price |\
++------------+------------+----------+-------+ \
+| 100        | 2008       | 10       | 5000  |\
+| 200        | 2011       | 15       | 9000  |\
++------------+------------+----------+-------+\
+\
+\
+
+
+Python Questions:
+
+----------------------------
+--------------1-------------
+----------------------------
+Input: digits = [1,2,3]\
+Output: [1,2,4]\
+Explanation: The array represents the integer 123.\
+Incrementing by one gives 123 + 1 = 124.\
+Thus, the result should be [1,2,4].\
+\
+Example 2:\
+Input: digits = [9]\
+Output: [1,0]\
+Explanation: The array represents the integer 9.\
+Incrementing by one gives 9 + 1 = 10.\
+Thus, the result should be [1,0]\
+\
+Write a python logic for above result?\
+\
+----------------------------
+--------------2-------------
+----------------------------
+Given a string s containing just the characters '(', ')', '\{', '\}', '[' and ']', determine if the input string is valid.\
+\
+An input string is valid if:\
+\
+Open brackets must be closed by the same type of brackets.\
+Open brackets must be closed in the correct order.\
+\
+Example 1:\
+\
+Input: s = "()"\
+Output: true\
+Example 2:\
+\
+Input: s = "()[]\{\}"\
+Output: true\
+Example 3:\
+\
+Input: s = "(]"\
+Output: false\
+\
+}
