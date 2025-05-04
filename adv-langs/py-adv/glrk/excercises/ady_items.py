@@ -1,5 +1,3 @@
-
-
 def ady(l):
     result = []
     group = [l[0]]
