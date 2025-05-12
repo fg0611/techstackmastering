@@ -2,7 +2,6 @@ list_nums = [1, 2, [3, 4, [5, 6]], 7, [8, 9]]
 
 # flatten a list
 
-
 def flat(l):
     # r = []
     if isinstance(l, list):
@@ -15,5 +14,4 @@ def flat(l):
     else:
         return [l]
 
-    
 print(flat(list_nums))

@@ -12,8 +12,6 @@ def abyl(arr, long):
     
     r = [v for v in d.values() if len(v)>1]
     return r
-        
-
 
 # Ejemplo de uso:
 entry = ["amor", "roma", "omar", "azar", "rata", "atar", "arte", "tear", "rate"]
