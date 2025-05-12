@@ -20,9 +20,7 @@ def subarr_eq_x(nums, goal):
         current_sum -= nums[i]
     return None
 
-
 print(subarr_eq_x(arr, x))
-
 
 def find_subarr_eq_x(nums, goal):
     if not isinstance(nums, list) or not nums:
